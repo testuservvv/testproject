@@ -1,0 +1,25 @@
+{
+  "name": "testproject",
+  "version": "1.0.0",
+  "description": "dfgs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thev8v/testproject.git"
+  },
+  "keywords": [
+    "keyword"
+  ],
+  "author": "vigen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thev8v/testproject/issues"
+  },
+  "homepage": "https://github.com/thev8v/testproject#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
