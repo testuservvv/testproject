@@ -1,11 +1,11 @@
-var express = require('express');
-var app = express();
 var port = process.env.PORT || 8080;
 
-app.get('/', function (req, res) {
-  res.send('Hello World!');
-});
+var static = require('node-static');
 
-app.listen(port, function () {
-  console.log('Example app listening on port '+port+'!');
-});
+var file = new static.Server('./public');
+
+require('http').createServer(function (request, response) {
+    request.addListener('end', function () {
+        file.serve(request, response);
+    }).resume();
+}).listen(port);
